@@ -29,7 +29,7 @@ export default function Card ({ streamData }: { streamData: TwitchStream }) {
         </div>
         <div className={_cardSectionImage}>
           <span className={_cardInfo}>Thumbnail</span>
-          <img src={streamData.thumbnail_url.replace('{width}', '1920').replace('{height}', '1080')} alt='Thumbnail of the stream' width={500} height={320} className={`${_cardImg} skeleton`} loading='lazy' />
+          <img src={streamData.thumbnail_url.replace('{width}', '500').replace('{height}', '320')} alt='Thumbnail of the stream' width={500} height={320} className={`${_cardImg} skeleton`} loading='lazy' />
         </div>
       </div>
     </>
